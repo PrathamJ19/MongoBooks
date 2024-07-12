@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Book</title>
+</head>
+<body>
+<h1>Add a New Book</h1>
+<form action="add" method="POST">
+<label for="title">Title:</label>
+<input type="text" id="title" name="title" required><br><br>
+<label for="author">Author:</label>
+<input type="text" id="author" name="author" required><br><br>
+<label for="pages">Pages:</label>
+<input type="number" id="pages" name="pages" required><br><br>
+<label for="ratings">Rating:</label>
+<input type="number" id="ratings" name="ratings" min="0" max="5" required><br><br>
+<label for="genres">Genres:</label>
+<select id="genres" name="genres" required>
+<option value="Fiction">Fiction</option>
+<option value="Non-fiction">Non-fiction</option>
+<option value="Fantasy">Fantasy</option>
+<option value="Science Fiction">Science Fiction</option>
+</select><br><br>
+<button type="submit">Add Book</button>
+</form>
+</body>
+</html>
